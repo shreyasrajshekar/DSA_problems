@@ -11,7 +11,7 @@ Each problem is uploaded with its **solution code** and sometimes with **explana
   - Problem: Move `n` disks from the source rod to the destination rod using an auxiliary rod, following the rules of Hanoi.  
   - Usual solution is recursive, but here it’s solved **iteratively using a stack** to simulate the call stack.  
   - Concepts: **Stacks**, **Simulation of Recursion**, **Divide & Conquer**  
-  - [Code](./hanoi.py) *(update filename if different)*
+  - [Code](./Hanoi.py) 
 
 ---
 
