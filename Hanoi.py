@@ -1,3 +1,4 @@
+#Using Recursion
 def Hanoi(n,frompeg,topeg,auxpeg):
     if n == 1:
         print(f"Move disk 1 from {frompeg} to {topeg}")
@@ -5,7 +6,8 @@ def Hanoi(n,frompeg,topeg,auxpeg):
     Hanoi(n-1, frompeg, auxpeg, topeg)
     print(f"Move disk {n} from {frompeg} to {topeg}")
     Hanoi(n-1, auxpeg, topeg, frompeg)
-
+    
+#Using Stacks
 def Hanoi_stack(n, frompeg, topeg, auxpeg):
     from_stack = list(range(n, 0, -1))  
     to_stack = []
@@ -48,4 +50,5 @@ def Hanoi_stack(n, frompeg, topeg, auxpeg):
                 print(f"Move disk {disk} from {topeg} to {auxpeg}")
 
         move_count += 1
+
 Hanoi_stack(5, 'A', 'C', 'B')
