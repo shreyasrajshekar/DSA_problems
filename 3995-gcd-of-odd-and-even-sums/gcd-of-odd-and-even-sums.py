@@ -5,4 +5,13 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        return fractions.gcd(n * n, n * (n + 1))
+        so, se = 0, 0
+        o, e = 1, 2
+
+        for i in range(n):
+            so += o
+            se += e
+            o += 2
+            e += 2
+
+        return fractions.gcd(so, se)
