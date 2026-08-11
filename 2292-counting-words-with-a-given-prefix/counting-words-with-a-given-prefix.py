@@ -5,8 +5,8 @@ class Solution(object):
         :type pref: str
         :rtype: int
         """
-        count=0
-        for i in range(len(words)):
-            if words[i].startswith(pref):
-                count+=1
-        return count
+        c=0
+        for i in words:
+            if i.startswith(pref):
+                c+=1
+        return c
